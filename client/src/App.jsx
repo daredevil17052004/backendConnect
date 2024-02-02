@@ -8,7 +8,7 @@ function App() {
   useEffect(()=>{
     async function getApi(){
       try{
-        const response = await axios.get("http://localhost:4000/")
+        const response = await axios.get("https://backendconnext.onrender.com/")
         console.log(response);
         setCount(response.data)
       }catch(err){
